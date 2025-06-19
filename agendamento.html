@@ -1,2 +1,21 @@
-  <label for="dataAgendamento">Data e Hora:</label>
-  <input type="datetime-local" id="dataAgendamento" name="dataAgendamento" required>
+<form id="agendamento">
+    <label for="dataAgendamento">Data e Hora:</label>
+    <input type="datetime-local" id="dataAgendamento" name="dataAgendamento" required>
+    
+    <label for="tipoAgendamento">Tipo de Agendamento:</label>
+    <select id="tipoAgendamento" name="tipoAgendamento" required>
+        <option value="retirada">Retirada no Local</option>
+        <option value="entrega">Entrega em Domicílio</option>
+    </select>
+    
+    <button type="submit">Agendar</button>
+</form>
+
+<script>
+    document.getElementById("agendamento").addEventListener("submit", function(event) {
+        event.preventDefault(); // Impede o envio do formulário para teste
+        let data = document.getElementById("dataAgendamento").value;
+        let tipo = document.getElementById("tipoAgendamento").value;
+        alert("Agendamento realizado para " + data + " com tipo: " + tipo);
+    });
+</script>
