@@ -1,51 +1,78 @@
-<section>
-    <h2>Produtos</h2>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Produtos - Minimercado da Tay</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+  <header class="text-center bg-dark text-white p-3">
+    <h1>Produtos do Minimercado</h1>
+    <nav>
+      <a href="index.html" class="text-white me-3">Início</a>
+      <a href="produtos.html" class="text-white me-3">Produtos</a>
+      <a href="servicos.html" class="text-white me-3">Serviços</a>
+      <a href="cadastro.html" class="text-white me-3">Cadastro</a>
+      <a href="agendamento.html" class="text-white">Agendamento</a>
+    </nav>
+  </header>
 
-    <h3>Promoção de Alimentos Não Perecíveis</h3>
+  <main class="container mt-5">
+    <h2>Promoção de Alimentos Não Perecíveis</h2>
     <div class="row">
-        <div class="col-md-4">
-            <img src="arroz.jpg" alt="arroz" class="img-fluid">
-            <h4>Produto 1</h4>
-            <p>Descrição do Produto 1</p>
-            <p>Preço: R$ 6,00</p>
-        </div>
-        <div class="col-md-4">
-            <img src="zeite.jpg" alt="azeite" class="img-fluid">
-            <h4>Produto 2</h4>
-            <p>Descrição do Produto 2</p>
-            <p>Preço: R$ 15,00</p>
-        </div>
+      <div class="col-md-6">
+        <img src="produtos/arroz.jpg" class="img-fluid" alt="Pacote de arroz tipo 1">
+        <h4>Arroz</h4>
+        <p>Arroz tipo 1, 5kg</p>
+        <p>Preço: R$ 6,00</p>
+      </div>
+      <div class="col-md-6">
+        <img src="produtos/azeite.jpg" class="img-fluid" alt="Garrafa de azeite extra virgem">
+        <h4>Azeite</h4>
+        <p>Azeite extra virgem 500ml</p>
+        <p>Preço: R$ 15,00</p>
+      </div>
     </div>
 
-    <h3>Promoção de Frutas</h3>
+    <h2 class="mt-5">Promoção de Frutas</h2>
     <div class="row">
-        <div class="col-md-4">
-            <img src="maça.jpg" alt="maça" class="img-fluid">
-            <h4>Fruta 1</h4>
-            <p>Descrição da Fruta 1</p>
-            <p>Preço: R$ 5,00</p>
-        </div>
-        <div class="col-md-4">
-            <img src="banana.jpg" alt="banana" class="img-fluid">
-            <h4>Fruta 2</h4>
-            <p>Descrição da Fruta 2</p>
-            <p>Preço: R$ 7,00</p>
-        </div>
+      <div class="col-md-6">
+        <img src="produtos/maca.jpg" class="img-fluid" alt="Maçãs vermelhas">
+        <h4>Maçã</h4>
+        <p>Maçã nacional - kg</p>
+        <p>Preço: R$ 5,00</p>
+      </div>
+      <div class="col-md-6">
+        <img src="produtos/banana.jpg" class="img-fluid" alt="Bananas frescas">
+        <h4>Banana</h4>
+        <p>Banana prata - kg</p>
+        <p>Preço: R$ 7,00</p>
+      </div>
     </div>
 
-    <h3>Higiene e Limpeza em Oferta</h3>
+    <h2 class="mt-5">Higiene e Limpeza</h2>
     <div class="row">
-        <div class="col-md-4">
-            <img src="detergente.jpg" alt="detergente" class="img-fluid">
-            <h4>Produto de Limpeza 1</h4>
-            <p>Descrição do Produto de Limpeza 1</p>
-            <p>Preço: R$ 8,00</p>
-        </div>
-        <div class="col-md-4">
-            <img src="desinfetante.jpg" alt="desinfetante" class="img-fluid">
-            <h4>Produto de Limpeza 2</h4>
-            <p>Descrição do Produto de Limpeza 2</p>
-            <p>Preço: R$ 12,00</p>
-        </div>
+      <div class="col-md-6">
+        <img src="produtos/detergente.jpg" class="img-fluid" alt="Detergente líquido neutro">
+        <h4>Detergente</h4>
+        <p>Detergente neutro 500ml</p>
+        <p>Preço: R$ 3,00</p>
+      </div>
+      <div class="col-md-6">
+        <img src="produtos/desinfetante.jpg" class="img-fluid" alt="Desinfetante para pisos">
+        <h4>Desinfetante</h4>
+        <p>Desinfetante lavanda 1L</p>
+        <p>Preço: R$ 6,00</p>
+      </div>
     </div>
-</section>
+  </main>
+
+  <footer class="text-center bg-dark text-white p-3 mt-5">
+    <p>&copy; 2025 Minimercado da Tay</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
